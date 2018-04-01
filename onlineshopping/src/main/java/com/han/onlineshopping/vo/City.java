@@ -14,8 +14,7 @@ public class City {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int cityId;
 	private String cityName;
-	@ManyToOne
-	State state;
+
 	public int getCityId() {
 		return cityId;
 	}
@@ -28,12 +27,7 @@ public class City {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	public State getState() {
-		return state;
-	}
-	public void setState(State state) {
-		this.state = state;
-	}
+	
 
 	
 }

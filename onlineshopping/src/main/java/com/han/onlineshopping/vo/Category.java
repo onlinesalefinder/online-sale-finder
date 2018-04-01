@@ -4,13 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="category")
 public class Category {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int categoryId;
 	private String categoryName;
+	private String categoryDescription;
 	public int getCategoryId() {
 		return categoryId;
 	}
@@ -22,6 +25,12 @@ public class Category {
 	}
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
+	}
+	public String getCategoryDescription() {
+		return categoryDescription;
+	}
+	public void setCategoryDescription(String categoryDescription) {
+		this.categoryDescription = categoryDescription;
 	}
 	
 }

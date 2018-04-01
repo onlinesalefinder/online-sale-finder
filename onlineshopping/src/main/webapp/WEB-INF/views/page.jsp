@@ -31,12 +31,12 @@
 
 <body>
 
-	<div class="wrapper">
+	<div class="wraper">
 
 		<%@include file="./shared/navbar.jsp"%>
 		<!-- /.container -->
 
-		<div class="content">
+		<div class="conten">
 			<c:if test="${userClicksHome == true }">
 				<%@include file="home.jsp"%>
 			</c:if>

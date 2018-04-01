@@ -1,4 +1,4 @@
-package com.han.onlineshopping.vo;
+/*package com.han.onlineshopping.vo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -35,3 +35,4 @@ public class Images {
 	}
 	
 }
+*/
