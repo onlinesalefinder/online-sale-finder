@@ -16,6 +16,8 @@ public interface RegDAO {
 
 	void saveItem(Item item);
 
+	List getCategories();
+
 	/*Product saveProduct(Product product);
 
 	void saveImages(Images[] images, Product p);

@@ -110,4 +110,13 @@ public class RegDAOImpl implements RegDAO {
 		tr.commit();
 		session.close();
 	}
+	public List getCategories() {
+		// TODO Auto-generated method stub
+		Session session = sf.openSession();
+		Query q = session.createQuery("from Category");
+		List categories = q.getResultList();
+		session.close();
+		return categories;
+	}
+	
 }

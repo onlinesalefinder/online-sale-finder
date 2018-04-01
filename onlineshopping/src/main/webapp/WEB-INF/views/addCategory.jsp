@@ -153,10 +153,9 @@ hr {
 				<h1>Add Category</h1>
 				<hr>
 				<label for="categoryName"><b>Category Name</b></label> 
-				<form:input  placeholder="Category Name" path="categoryName"
-					required/> <label for="description"><b>Description</b></label>
-				<form:textarea placeholder="Description" path="categoryDescription"
-					required></form:textarea>
+				<form:input  placeholder="Category Name" path="categoryName"/>
+				 <label for="description"><b>Description</b></label>
+				<form:textarea placeholder="Description" path="categoryDescription"></form:textarea>
 
 				<div class="clearfix">
 					<button type="button" class="cancelbtn">Cancel</button>

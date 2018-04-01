@@ -38,6 +38,12 @@ public class RegServiceImpl implements RegService {
 		dao.saveItem(item);
 	}
 
+	public List getCategories() {
+		// TODO Auto-generated method stub
+		List categories = dao.getCategories();
+		return categories;
+	}
+
 	/*public Product saveProduct(Product product) {
 		// TODO Auto-generated method stub
 		Product p = dao.saveProduct(product);

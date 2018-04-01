@@ -76,7 +76,8 @@ public class pageController {
 
 	@RequestMapping(value="/addItem")
 	public ModelAndView addItem(){
-		return new ModelAndView("addItem","item",new Item());
+		List categories=service.getCategories();
+		return new ModelAndView("addItem","item",new Item()).addObject("categories",categories);
 	}
 	
 	@RequestMapping(value="/saveItem")

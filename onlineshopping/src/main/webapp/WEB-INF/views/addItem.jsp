@@ -60,7 +60,6 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -122,19 +121,19 @@ hr {
 	<body>
 
 <div id="id01" class="modal">
-  <form:form class="modal-content" action="saveItem" modelAttribute="item">
+  <form:form class="modal-content" action="saveItem.htm" modelAttribute="item">
     <div class="container">
       <h1>Add Item</h1>
       <hr>
       <label for="Name"><b>Name</b></label>
-      <form:input  placeholder="Item Name" path="itemName" required/>
+      <form:input  placeholder="Item Name" path="itemName" />
 
       <label for="description"><b>Description</b></label>
-      <form:textarea placeholder="Description" path="itemDescription" required></form:textarea>
+      <form:textarea placeholder="Description" path="itemDescription" ></form:textarea>
 
-      <label for="image"><b>Image</b></label>
-      <form:input type="file" placeholder="Select Image" path="imgsrc" required/>
-      
+     <%--  <label for="image"><b>Image</b></label>
+      <form:input type="file" placeholder="Select Image" path="imgsrc" />
+      --%> 
       <label><b>Category</b></label>
       <form:select path="category.categoryId">
       	<form:options items="${categories}" itemLabel="categoryName"  itemValue="categoryId"/>
